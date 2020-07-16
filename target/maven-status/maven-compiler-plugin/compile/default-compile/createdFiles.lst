@@ -1,0 +1,10 @@
+com\bitrix24\qa\TestUtil\WebEventListener.class
+com\bitrix24\qa\Pages\Calendar.class
+com\bitrix24\qa\Pages\HomePage.class
+com\bitrix24\qa\Pages\CRMPage.class
+com\bitrix24\qa\Pages\LogInPage.class
+com\bitrix24\qa\ExtentReportListener\ExtentReportNG.class
+com\bitrix24\qa\base\testBase.class
+com\bitrix24\qa\TestUtil\constant.class
+com\bitrix24\qa\TestUtil\WaitDriverWait.class
+com\bitrix24\qa\TestUtil\testUtil.class

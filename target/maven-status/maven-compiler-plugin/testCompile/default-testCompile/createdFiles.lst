@@ -1,0 +1,4 @@
+com\bitrix24\qa\testcases\CalendarPageTest.class
+com\bitrix24\qa\testcases\HomePageTest.class
+com\bitrix24\qa\testcases\LogInPageTest.class
+com\bitrix24\qa\testcases\CRMPagetest.class
