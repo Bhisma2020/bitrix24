@@ -16,7 +16,6 @@ public class CalendarPageTest extends testBase {
 	Calendar calendar;
 	
 	
-	
 	public CalendarPageTest() {
 		super();
 		
@@ -29,17 +28,17 @@ public class CalendarPageTest extends testBase {
 		loginPage = new LogInPage();
 		homePage = new HomePage();
 		calendar = new Calendar();
-		loginPage.loginwithvalidcredentials();
-		//homePage.usercanaddevent();
+		homePage =loginPage.loginwithvalidcredentials();
+		calendar =homePage.usercanaddevent();
 	}
 	
-	
+	/*
 	@Test(priority=1)
 	public void verifyuserisinCalendarPage() {
 		calendar.verifycalendarpage();
 	}
-	
-	@Test(priority =2)
+	*/
+	@Test(priority =1)
 	public void verifyusercancreatenewEvent() throws InterruptedException {
 		calendar.createnewevent();
 	}

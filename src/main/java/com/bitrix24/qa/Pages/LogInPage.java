@@ -1,6 +1,9 @@
 package com.bitrix24.qa.Pages;
 
+import java.util.concurrent.TimeoutException;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -45,7 +48,9 @@ public class LogInPage extends testBase{
 	@FindBy(xpath="//div[@class='VfPpkd-RLmnJb']")
 	WebElement Nextgoogle;
 	
-	@FindBy(xpath = "//body[@class='b24network-account-main']/div[@class='b24network-account']/div[@class='b24network-account-col']/div[@class='b24network-account-block js-24network-account-block']/div[@class='b24network-profile-list']/div[1]/a[1]")
+//	@FindBy(xpath = "//body[@class='b24network-account-main']/div[@class='b24network-account']/div[@class='b24network-account-col']/div[@class='b24network-account-block js-24network-account-block']/div[@class='b24network-profile-list']/div[1]/a[1]")
+	
+	@FindBy(xpath="//*[text()='b24-koc0ox.bitrix24.com']")
 	WebElement GoLink;
 	
 	public LogInPage () {
@@ -62,17 +67,23 @@ public class LogInPage extends testBase{
 		
 		Password.sendKeys(prop.getProperty("password"));
 		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(NexttabLink));
-			
+//		WebDriverWait wait = new WebDriverWait(driver, 10);
+//		wait.until(ExpectedConditions.elementToBeClickable(NexttabLink));
+		Thread.sleep(5000);	
 		NexttabLink.click();
+		Thread.sleep(5000);
+		try {
+		 
+		driver.findElement(By.xpath("//a[@class='ui-btn ui-btn-sm ui-btn-primary ui-btn-round b24network-profile-item-btn']"));	
+		}
+		catch (StaleElementReferenceException e)
+		{
 		
-		
-		WebDriverWait wait1 = new WebDriverWait(driver, 10);
-		wait1.until(ExpectedConditions.elementToBeClickable(GoLink));
-		Thread.sleep(3000);	
-		GoLink.click();
-		
+			driver.findElement(By.xpath("//a[@class='ui-btn ui-btn-sm ui-btn-primary ui-btn-round b24network-profile-item-btn']"));	
+		}
+		//StaleElementReferenceException
+		//Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[@class='ui-btn ui-btn-sm ui-btn-primary ui-btn-round b24network-profile-item-btn']")).click();
 		return new HomePage();
 	}
 

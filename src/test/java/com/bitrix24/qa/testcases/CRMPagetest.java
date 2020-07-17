@@ -34,7 +34,7 @@ public class CRMPagetest extends testBase {
 		crmPage = new CRMPage();
 		calendar = new Calendar();
 		
-		loginPage.loginwithvalidcredentials();
+		homePage=loginPage.loginwithvalidcredentials();
 		crmPage = homePage.createnewcontact();
 	}
 	

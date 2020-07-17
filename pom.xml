@@ -8,13 +8,12 @@
   <artifactId>Bitrix24.net</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>Bitrix24.net</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <packaging>jar</packaging>
 
-	<packaging>jar</packaging>
+	<name>Bitrix24.net</name>
+	<url>http://maven.apache.org</url>
 
-		<properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		 <maven.compiler.source>1.8</maven.compiler.source>
                   <maven.compiler.target>1.8</maven.compiler.target>
@@ -46,7 +45,13 @@
 
   </pluginManagement>
  </build>
-	 <dependencies>
+	
+	
+	
+	
+	
+	
+			 <dependencies>
 	  <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>

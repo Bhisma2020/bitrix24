@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bitrix24.qa.testcases.CRMPagetest">
+      <class name="com.bitrix24.qa.testcases.CalendarPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="validatecrmtabisClicked"/>
+          <include name="verifyuserisinCalendarPage"/>
           <include name="Setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.bitrix24.qa.testcases.CRMPagetest -->
+      </class> <!-- com.bitrix24.qa.testcases.CalendarPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

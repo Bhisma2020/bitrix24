@@ -10,6 +10,7 @@ import org.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.bitrix24.qa.base.testBase;
 
+
 public class WebEventListener extends testBase implements WebDriverEventListener {
 
 	public void beforeNavigateTo(String url, WebDriver driver) {
@@ -149,6 +150,4 @@ public class WebEventListener extends testBase implements WebDriverEventListener
 		
 	}
 
-
-	
 }

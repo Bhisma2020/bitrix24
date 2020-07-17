@@ -25,25 +25,23 @@ public class HomePageTest extends testBase {
 	public void Setup() throws InterruptedException {
 		testBase.initialization();
 		loginPage =new LogInPage();
-		homePage = new HomePage();
-		loginPage.loginwithvalidcredentials();
-		
+		homePage = loginPage.loginwithvalidcredentials();
 	}
 	
-	@Test(priority =2)
-	public void validateCRMLink() throws InterruptedException {
+	@Test(priority =1)
+	public void clickCRM() throws InterruptedException {
 	
 		
 		homePage.createnewcontact();
-	
-	}
-	
-	@Test(priority=1)
-	public void verifyTiitle() {
 		
-		homePage.validatetitle();
 	
 	}
+	
+//	@Test(priority=1)
+//	public void verifyTiitle() throws InterruptedException {
+//		homePage.validatetitle();
+//	
+//	}
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

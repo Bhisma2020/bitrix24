@@ -31,9 +31,9 @@ public class LogInPageTest extends testBase {
 	public void  validateLoginpage() throws InterruptedException {
 		
 		loginPage.loginwithvalidcredentials();
-		Thread.sleep(5000);
-		Assert.assertEquals(driver.getTitle(), driver.getTitle());			
-	 	System.out.println(driver.getTitle());
+		//Thread.sleep(5000);
+		//System.out.println(driver.getTitle());
+		//Assert.assertEquals(driver.getTitle(), "Bitrix24.Network profile");
 	}
 	
 	

@@ -1,87 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="163245" started-at="2020-07-16T19:58:22 EDT" finished-at="2020-07-16T20:01:06 EDT">
+  <suite name="Suite" duration-ms="124442" started-at="2020-07-17T18:47:19 EDT" finished-at="2020-07-17T18:49:23 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="163245" started-at="2020-07-16T19:58:22 EDT" finished-at="2020-07-16T20:01:06 EDT">
+    <test name="Test" duration-ms="124442" started-at="2020-07-17T18:47:19 EDT" finished-at="2020-07-17T18:49:23 EDT">
       <class name="com.bitrix24.qa.testcases.CRMPagetest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@e320068]" name="Setup" is-config="true" duration-ms="24434" started-at="2020-07-16T19:59:17 EDT" finished-at="2020-07-16T19:59:41 EDT">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@517cd4b]" name="Setup" is-config="true" duration-ms="28377" started-at="2020-07-17T18:47:50 EDT" finished-at="2020-07-17T18:48:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="validatecrmtabisClicked()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@e320068]" name="validatecrmtabisClicked" duration-ms="8777" started-at="2020-07-16T19:59:41 EDT" finished-at="2020-07-16T19:59:50 EDT">
+        <test-method status="PASS" signature="validatecrmtabisClicked()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@517cd4b]" name="validatecrmtabisClicked" duration-ms="8521" started-at="2020-07-17T18:48:19 EDT" finished-at="2020-07-17T18:48:27 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatecrmtabisClicked -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@e320068]" name="tearDown" is-config="true" duration-ms="1155" started-at="2020-07-16T19:59:50 EDT" finished-at="2020-07-16T19:59:51 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.CRMPagetest@517cd4b]" name="tearDown" is-config="true" duration-ms="1031" started-at="2020-07-17T18:48:27 EDT" finished-at="2020-07-17T18:48:28 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.bitrix24.qa.testcases.CRMPagetest -->
       <class name="com.bitrix24.qa.testcases.CalendarPageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="Setup" is-config="true" duration-ms="25522" started-at="2020-07-16T19:58:22 EDT" finished-at="2020-07-16T19:58:48 EDT">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@76a4d6c]" name="Setup" is-config="true" duration-ms="27601" started-at="2020-07-17T18:47:19 EDT" finished-at="2020-07-17T18:47:46 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="verifyuserisinCalendarPage()[pri:1, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="verifyuserisinCalendarPage" duration-ms="19" started-at="2020-07-16T19:58:48 EDT" finished-at="2020-07-16T19:58:48 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyuserisinCalendarPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="tearDown" is-config="true" duration-ms="1184" started-at="2020-07-16T19:58:48 EDT" finished-at="2020-07-16T19:58:49 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="Setup" is-config="true" duration-ms="21288" started-at="2020-07-16T19:58:49 EDT" finished-at="2020-07-16T19:59:10 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="verifyusercancreatenewEvent()[pri:2, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="verifyusercancreatenewEvent" duration-ms="5409" started-at="2020-07-16T19:59:10 EDT" finished-at="2020-07-16T19:59:16 EDT">
+        <test-method status="PASS" signature="verifyusercancreatenewEvent()[pri:1, instance:com.bitrix24.qa.testcases.CalendarPageTest@76a4d6c]" name="verifyusercancreatenewEvent" duration-ms="3215" started-at="2020-07-17T18:47:46 EDT" finished-at="2020-07-17T18:47:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyusercancreatenewEvent -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@536aaa8d]" name="tearDown" is-config="true" duration-ms="836" started-at="2020-07-16T19:59:16 EDT" finished-at="2020-07-16T19:59:17 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.CalendarPageTest@76a4d6c]" name="tearDown" is-config="true" duration-ms="707" started-at="2020-07-17T18:47:50 EDT" finished-at="2020-07-17T18:47:50 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.bitrix24.qa.testcases.CalendarPageTest -->
       <class name="com.bitrix24.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="Setup" is-config="true" duration-ms="21734" started-at="2020-07-16T19:59:51 EDT" finished-at="2020-07-16T20:00:13 EDT">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@6cc7b4de]" name="Setup" is-config="true" duration-ms="23778" started-at="2020-07-17T18:48:28 EDT" finished-at="2020-07-17T18:48:52 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="verifyTiitle()[pri:1, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="verifyTiitle" duration-ms="6" started-at="2020-07-16T20:00:13 EDT" finished-at="2020-07-16T20:00:13 EDT">
+        <test-method status="PASS" signature="clickCRM()[pri:1, instance:com.bitrix24.qa.testcases.HomePageTest@6cc7b4de]" name="clickCRM" duration-ms="3179" started-at="2020-07-17T18:48:52 EDT" finished-at="2020-07-17T18:48:55 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyTiitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="tearDown" is-config="true" duration-ms="775" started-at="2020-07-16T20:00:13 EDT" finished-at="2020-07-16T20:00:14 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="Setup" is-config="true" duration-ms="20759" started-at="2020-07-16T20:00:14 EDT" finished-at="2020-07-16T20:00:34 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="validateCRMLink()[pri:2, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="validateCRMLink" duration-ms="1924" started-at="2020-07-16T20:00:34 EDT" finished-at="2020-07-16T20:00:36 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCRMLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@1f57539]" name="tearDown" is-config="true" duration-ms="948" started-at="2020-07-16T20:00:36 EDT" finished-at="2020-07-16T20:00:37 EDT">
+        </test-method> <!-- clickCRM -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.HomePageTest@6cc7b4de]" name="tearDown" is-config="true" duration-ms="763" started-at="2020-07-17T18:48:55 EDT" finished-at="2020-07-17T18:48:56 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.bitrix24.qa.testcases.HomePageTest -->
       <class name="com.bitrix24.qa.testcases.LogInPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@76f2b07d]" name="setup" is-config="true" duration-ms="9249" started-at="2020-07-16T20:00:37 EDT" finished-at="2020-07-16T20:00:46 EDT">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@32cf48b7]" name="setup" is-config="true" duration-ms="8538" started-at="2020-07-17T18:48:56 EDT" finished-at="2020-07-17T18:49:04 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="validateLoginpage()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@76f2b07d]" name="validateLoginpage" duration-ms="18376" started-at="2020-07-16T20:00:46 EDT" finished-at="2020-07-16T20:01:05 EDT">
+        <test-method status="PASS" signature="validateLoginpage()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@32cf48b7]" name="validateLoginpage" duration-ms="17994" started-at="2020-07-17T18:49:04 EDT" finished-at="2020-07-17T18:49:22 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateLoginpage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@76f2b07d]" name="tearDown" is-config="true" duration-ms="805" started-at="2020-07-16T20:01:05 EDT" finished-at="2020-07-16T20:01:06 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.bitrix24.qa.testcases.LogInPageTest@32cf48b7]" name="tearDown" is-config="true" duration-ms="684" started-at="2020-07-17T18:49:22 EDT" finished-at="2020-07-17T18:49:23 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

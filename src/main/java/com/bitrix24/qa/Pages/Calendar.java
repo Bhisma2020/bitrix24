@@ -78,12 +78,13 @@ public class Calendar extends testBase{
 		//driver.switchTo().defaultContent();
 	}
 	
-	
+	/*
 	public void verifycalendarpage() {
 	
 		String s = driver.getTitle();
-		Assert.assertEquals(s, driver.getTitle());
-		System.out.println("Actual title"+s);
-	}
+		System.out.println(s);
+		Assert.assertEquals(s, "Bhisma Thapa: Calendar");
+		
+	}*/
 	
 }

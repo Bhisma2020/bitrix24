@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.bitrix24.qa.ExtentReportListener.ExtentReportNG"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.bitrix24.qa.testcases.CRMPagetest">
@@ -10,29 +13,6 @@
           <include name="Setup"/>
         </methods>
       </class> <!-- com.bitrix24.qa.testcases.CRMPagetest -->
-      <class name="com.bitrix24.qa.testcases.HomePageTest">
-        <methods>
-          <include name="verifyTiitle"/>
-          <include name="Setup"/>
-          <include name="tearDown"/>
-          <include name="validateCRMLink"/>
-        </methods>
-      </class> <!-- com.bitrix24.qa.testcases.HomePageTest -->
-      <class name="com.bitrix24.qa.testcases.LogInPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="validateLoginpage"/>
-        </methods>
-      </class> <!-- com.bitrix24.qa.testcases.LogInPageTest -->
-      <class name="com.bitrix24.qa.testcases.CalendarPageTest">
-        <methods>
-          <include name="verifyuserisinCalendarPage"/>
-          <include name="verifyusercancreatenewEvent"/>
-          <include name="Setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- com.bitrix24.qa.testcases.CalendarPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

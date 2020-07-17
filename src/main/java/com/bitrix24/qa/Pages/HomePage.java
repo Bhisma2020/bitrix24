@@ -1,5 +1,6 @@
 package com.bitrix24.qa.Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -16,7 +17,7 @@ public class HomePage extends testBase {
 	WebElement CrmLink;
 	
 	
-	@FindBy(xpath = "//span[text()='Contacts']")
+	@FindBy(xpath = "//span[@class='main-buttons-item-text-title'][contains(text(),'Contacts')]")
 	WebElement Contacts;
 	
 	
@@ -43,12 +44,15 @@ public class HomePage extends testBase {
 	public CRMPage createnewcontact() throws InterruptedException {
 		
 		//GoLink.click();
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(ExpectedConditions.elementToBeClickable(CrmLink));
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
+		//wait.until(ExpectedConditions.elementToBeClickable(CrmLink));
 				
+		driver.findElement(By.xpath("//span[text()='CRM']")).click();
+		//CrmLink.click();
 		
-		CrmLink.click();
-			
+		WebDriverWait wait1 = new WebDriverWait(driver, 10);
+		wait1.until(ExpectedConditions.elementToBeClickable(Contacts));
+				
 		Contacts.click();
 			
 		return new CRMPage();
@@ -58,8 +62,8 @@ public class HomePage extends testBase {
 	public void validatetitle() {
 		
 		String title = driver.getTitle();
-		Assert.assertEquals(title, title);
 		System.out.println(title);
+		Assert.assertEquals(title, "My tasks");
 	
 	
 	}

@@ -70,7 +70,7 @@ public class CRMPage extends testBase {
 	@FindBy(xpath = "//span[@class='side-panel-label-text']")
 	WebElement Frame;
 	
-	@FindBy(xpath ="//table[@id='CRM_CONTACT_LIST_V12_table']//input[@id='CRM_CONTACT_LIST_V12_check_all']")
+	@FindBy(xpath ="(//input[@id='CRM_CONTACT_LIST_V12_check_all'])[1]")
 	WebElement Checkbox;
 	
 	@FindBy(xpath ="//span[@id='grid_remove_button_control']")
@@ -120,10 +120,12 @@ public class CRMPage extends testBase {
 		close.click();
 		
 		WebDriverWait wait3 = new WebDriverWait(driver, 20);
-		wait3.until(ExpectedConditions.elementToBeClickable(Checkbox));
+		wait3.until(ExpectedConditions.visibilityOfAllElements(Checkbox));
 		Checkbox.click();
+		
 		WebDriverWait wait4 = new WebDriverWait(driver, 20);
-		wait4.until(ExpectedConditions.elementToBeClickable(Checkbox));
+		wait4.until(ExpectedConditions.elementToBeClickable(Delete));
+		
 		Delete.click();
 		//Thread.sleep(5000);
 		Continue.click();
