@@ -26,7 +26,7 @@ public class HomePageTest extends testBase {
 		testBase.initialization();
 		loginPage =new LogInPage();
 		homePage = new HomePage();
-		homePage = loginPage.loginwithvalidcredentials();
+		loginPage.loginwithvalidcredentials();
 		
 	}
 	

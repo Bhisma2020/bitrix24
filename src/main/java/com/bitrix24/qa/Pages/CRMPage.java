@@ -122,6 +122,8 @@ public class CRMPage extends testBase {
 		WebDriverWait wait3 = new WebDriverWait(driver, 20);
 		wait3.until(ExpectedConditions.elementToBeClickable(Checkbox));
 		Checkbox.click();
+		WebDriverWait wait4 = new WebDriverWait(driver, 20);
+		wait4.until(ExpectedConditions.elementToBeClickable(Checkbox));
 		Delete.click();
 		//Thread.sleep(5000);
 		Continue.click();

@@ -27,8 +27,8 @@ public class testBase {
 		try {
 			
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("E:\\Automation\\Bitrix24.net\\src\\main\\java\\com\\bitrix24"
-					+ "\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("E:\\Automation\\Bitrix24.net\\src\\main\\java\\com\\bitrix24\\qa\\config"
+					+ "\\config.properties");
 			prop.load(ip);
 //			System.out.println(prop.getProperty("browser"));
 		}

@@ -30,7 +30,7 @@ public class CalendarPageTest extends testBase {
 		homePage = new HomePage();
 		calendar = new Calendar();
 		loginPage.loginwithvalidcredentials();
-		homePage.usercanaddevent();
+		//homePage.usercanaddevent();
 	}
 	
 	
